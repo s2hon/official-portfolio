@@ -4,8 +4,7 @@ import SEO from "../components/App/seo"
 import Navbar from "../components/Main/Navbar"
 import MainBanner from "../components/Main/MainBanner"
 import About from "../components/Main/About"
-import CaseStudy from "../components/Main/CaseStudy"
-import Services from "../components/Main/Services"
+import Portfolio from "../components/Main/Portfolio"
 import Education from "../components/Main/Education"
 import Experience from "../components/Main/Experience"
 import Partners from "../components/Main/Partners"
@@ -22,13 +21,12 @@ const IndexPage = () => (
                 <SEO title="Staci Shon" />
                 <div className="main-content two">
                     <MainBanner />
-                    <About />
-                    <CaseStudy />
+                    <About data={data}/>
+                    <Portfolio data={data}/>
                     <Partners />
                     <Education/>
                     <Experience data={data}/>
-                    <Services />
-                    <Projects />
+                    <Projects data={data}/>
                     <ContactForm />
                     <Footer />
                 </div>

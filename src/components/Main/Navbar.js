@@ -3,10 +3,11 @@ import {Link} from 'gatsby'
 import { useRecoilState } from 'recoil'
 import {sModalState} from '../../utils/recoil-atoms'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import logo1 from '../../components/App/assets/images/logo/icons8-download-resume.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faEnvelope,
-  } from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-solid-svg-icons"
 import {
     faFacebookF,
     faGithub,
@@ -117,7 +118,7 @@ const Navbar = () => {
 
                         <div className="aside-footer">
                             <Link to="#" className="common-btn three">
-                                Download CV <i className='bx bxs-download'></i>
+                                Download Resume <i className='bx bxs-download'></i>
                             </Link>
                             <ul className="social">
                                 <li><a href={resume.social.linkedinurl} target="_blank"><FontAwesomeIcon icon={faLinkedinIn} size="1x" /></a></li>
@@ -125,6 +126,7 @@ const Navbar = () => {
                                 <li><a href={resume.social.facebookurl} target="_blank"><FontAwesomeIcon icon={faFacebookF} size="1x" /></a></li>
                                 <li><a href={resume.social.twitterurl} target="_blank"><FontAwesomeIcon icon={faTwitter} size="1x" /></a></li>
                                 <li><a href="mailto:staci.shon@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope} size="1x" /></a></li>
+                                {/* <li><a href="#" target="_blank"><img src={logo1} alt="resume" width="30"/></a></li> */}
                             </ul>
                         </div>
                     </div>
@@ -132,13 +134,15 @@ const Navbar = () => {
             </nav>
 
             {/* Sidebar Demos Modal */}
-            <div className="demo-side-icon">
-                <button type="button" className="modal-btn" 
-                    onClick={toggleModal}
-                >
-                    <span>Contact Me</span>
-                </button>
-            </div>
+            {/* <div className="demo-side-icon">
+                <a href="mailto:staci.shon@gmail.com" target="_blank">
+                    <button type="button" className="modal-btn" 
+                        onClick={toggleModal}
+                    >
+                        <span><FontAwesomeIcon icon={faEnvelope} size="1x" /></span>
+                    </button>
+                </a>
+            </div> */}
 
         </React.Fragment>
     )

@@ -13,7 +13,9 @@
     {
       "institution": "The University of Texas at Austin - Center for Professional Education",
       "degree": "Full Stack Web Development",
-      "description": "A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handelbars.js & ReactJS.",
+      "description": [
+        "A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handelbars.js & ReactJS."
+      ],
       "start": "Sep 2020",
       "end": "Dec 2020"
     },
@@ -48,8 +50,8 @@
         "Built and implemented efficient, operational and communication structure, for the group, which increased our total sales by 200%.",
         "Coordinated and monitored event timelines and ensured completion within agreed upon deadlines."
       ],
-      "start": "11/2018",
-      "end": "09/2019"
+      "start": "08/2019",
+      "end": "04/2020"
     },
     {
       "role": "Assistant General Manager & Event Coordinator",
@@ -58,8 +60,8 @@
         "Created a cross-training program ensuring FOH staff members were able to perform confidently and effectively in all positions.",
         "Worked with clients to guide them through the event details and served as their personal coordinator throughout the entire planning process and event."
       ],
-      "start": "04/2018",
-      "end": "11/2018"
+      "start": "09/2018",
+      "end": "06/2019"
     },
     {
       "role": "Operations Coordinator",
@@ -91,16 +93,60 @@
       "instagramurl": "https://www.instagram.com/s2_hon",
       "twitterurl": "https://twitter.com/30minutesbefore"
     },
-  "majorprojects":
+  "majorprojects":[
     {
       "name": "Interactive Menu Web App",
       "company": "Sushi Junai",
-      "description": "As my first real world experience-I contacted my old job Sushi Junai-a popular all you can eat sushi joint in Austin TX-and offered them to create a web application. Under my lead, I-with 4 other classmates-developed a customized Sushi Junai app where customers can not only track their order history but also access favorites! The app is in 2nd iteration and more updates are still coming.",
+      "description": "As my first real world experience-I contacted my old job Sushi Junai-a popular all you can eat sushi joint in Austin TX-and offered them to create a web application. Under my lead, with 4 other classmates, we developed a customized Sushi Junai app with a order track with an option to save favorites! The app is in 3rd iteration and more updates are still coming.",
       "link": "https://sushi-junai.herokuapp.com/",
-      "github": "https://github.com/s2hon/sushi-junai",
+      "github": "https://github.com/s2hon/sushi-junai-official",
       "responsibilities": "",
-      "tools": " React.JS, Redux, Node.JS, MySQL, Yelp API, Reactstrap, Sequelize"
+      "tools": "React.JS, Redux, Node.JS, MySQL, Yelp API, Reactstrap, Sequelize, Heroku"
     },
+    {
+      "name": "Interactive Music Review Platform",
+      "company": "Earbud",
+      "description": "A site that allows users to search, catalogue, and review music on an individual page, curating their tastes and watching trends emerge in real time.",
+      "link": "https://earbudteam8.herokuapp.com/",
+      "github": "https://github.com/s2hon/EARBUD",
+      "responsibilities": "",
+      "tools": "Node.js, Express, Spotify API, jQuery, Sequelize, jawsDB, Foundation, Heroku"
+    }
+  ],
+    "bigprojects":[
+      {
+        "name": "Employee Directory",
+        "link": "https://s2hon.github.io/employee-directory/",
+        "github": "https://github.com/s2hon/employee-directory",
+        "img": "bigproject1"
+      },
+      {
+        "name": "Fitness Tracker",
+        "link": "https://workout-tracker-20.herokuapp.com/",
+        "github": "https://github.com/s2hon/workout-tracker",
+        "img": "bigproject2"
+      },
+      {
+        "name": "Note Taker",
+        "link": "https://note-taker-ver1.herokuapp.com/",
+        "github": "https://github.com/s2hon/note-taker",
+        "img": "bigproject3"
+      }
+    ], 
+    "smallprojects":[
+      {
+        "name": "Budget Tracker",
+        "link": "https://budget-tracker-v2.herokuapp.com/",
+        "github": "https://github.com/s2hon/sushi-junai",
+        "img": "smallproject1"
+      },
+      {
+        "name": "Hot Restaurants Reservation App",
+        "link": "https://badabing-hotrestaurant.herokuapp.com/",
+        "github": "https://github.com/s2hon/workout-tracker",
+        "img": "smallproject2"
+      }
+    ], 
   "skills": [
     {
       "title": "Front-end",

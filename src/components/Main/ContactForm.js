@@ -1,7 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo1 from '../../components/App/assets/images/logo/icons8-download-resume.svg'
+import {
+    faFacebookF,
+    faGithub,
+    faLinkedinIn,
+    faTwitter
+} from "@fortawesome/free-brands-svg-icons";
+import resume from '../App/assets/data/profile'
 import axios from 'axios'
-import baseUrl from '../../utils/baseUrl'
-import { useForm } from 'react-hook-form'
 import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
 const MySwal = withReactContent(Swal)
@@ -17,190 +24,224 @@ const alertContent = () => {
     })
 }
 
-// Form initial state
-const INITIAL_STATE = {
-    name: "",
-    email: "",
-    number: "",
-    subject: "",
-    text: ""
-};
-
-const ContactForm = () => {
-    const [contact, setContact] = useState(INITIAL_STATE);
-    const { register, handleSubmit, errors } = useForm();
-
-    const handleChange = e => {
-        const { name, value } = e.target;
-        setContact(prevState => ({ ...prevState, [name]: value }));
-        // console.log(contact)
-    }
-
-    const onSubmit = async e => {
-        // e.preventDefault();
-        try {
-            // const url = `${baseUrl}/api/contact`;
-            const { name, email, number, subject, text } = contact;
-            const payload = { name, email, number, subject, text };
-            // await axios.post(url, payload);
-            // console.log(url);
-            setContact(INITIAL_STATE);
-            alertContent();
-        } catch (error) {
-            // console.log(error)
+    class ContactForm extends React.Component {
+        constructor(props) {
+            super(props);
+            // this.state = {
+            //     name: "",
+            //     email: "",
+            //     subject: "",
+            //     number: "",
+            //     message: ""
+            // }
+            this.state = {
+                name: "",
+                email: "",
+                feedback: "",
+            };
+            }
         }
-    };
 
-    return (
-        <div id="contact" className="contact-area three border-bottom-two pt-100 pb-70">
-            <div className="container">
-                <div className="section-title three">
-                    <span className="sub-title">CONTACT</span>
-                    <h2>Yes! You Are Here! Have You Any Project? Drop A Line Here</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, seddiam voluptua. At vero eos et accusam et.</p>
-                </div>
+        handleInputChange(event) {
+            event.preventDefault();
+            const target = event.target;
+            const name = target.name;
+            const value = target.value;
+        this.setState({ [name]: value });
+        }
 
-                <div className="row align-items-center">
-                    <div className="col-md-7 col-lg-6">
-                        <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
-                            <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="name" 
-                                    className="form-control" 
-                                    placeholder="Name" 
-                                    value={contact.name}
-                                    onChange={handleChange}
-                                    ref={register({ required: true })}
-                                />
-                                <div className='invalid-feedback' style={{display: 'block'}}>
-                                    {errors.name && 'Name is required.'}
-                                </div>
-                            </div>
-                                 
-                            <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="email" 
-                                    className="form-control" 
-                                    placeholder="Email" 
-                                    value={contact.email}
-                                    onChange={handleChange}
-                                    ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-                                />
-                                <div className='invalid-feedback' style={{display: 'block'}}>
-                                    {errors.email && 'Email is required.'}
-                                </div>
-                            </div>
-                
-                            <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="subject" 
-                                    className="form-control" 
-                                    placeholder="Subject" 
-                                    value={contact.subject}
-                                    onChange={handleChange}
-                                    ref={register({ required: true })}
-                                />
-                                <div className='invalid-feedback' style={{display: 'block'}}>
-                                    {errors.subject && 'Subject is required.'}
-                                </div>
-                            </div>
-                              
-                            <div className="form-group">
-                                <input 
-                                    type="text" 
-                                    name="number" 
-                                    className="form-control" 
-                                    placeholder="Phone" 
-                                    value={contact.number}
-                                    onChange={handleChange}
-                                    ref={register({ required: true })}
-                                />
-                                <div className='invalid-feedback' style={{display: 'block'}}>
-                                    {errors.number && 'Number is required.'}
-                                </div>
-                            </div>
+        // handleSubmit(e){
+        //     e.preventDefault();
+        //         axios({
+        //         method: "POST", 
+        //         url:"http://localhost:8000/send", 
+        //         data:  this.state
+        //         }).then((response)=>{
+        //         if (response.data.status === 'success') {
+        //             alert("Message Sent."); 
+        //             this.resetForm()
+        //         } else if (response.data.status === 'fail') {
+        //             alert("Message failed to send.")
+        //         }
+        //         })
+        //     }
+        
+        // resetForm(){
+        //     this.setState({name: "", email: "", subject: "", number: "",message: ""})
+        // }
+    
+        render () {
+            return (
+                <div id="contact" className="contact-area three border-bottom-two pt-100 pb-70">
+                    <div className="container">
+                        <div className="section-title three">
+                            <span className="sub-title">CONTACT</span>
+                            <h2>Want to grab coffee with me? Drop A Line Here</h2>
+                        </div>
+    
+                        <div className="row align-items-center">
+                            <div className="col-md-7 col-lg-6">
+                                <form id="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                                    <div className="form-group">
+                                        <input 
+                                            type="text"
+                                            htmlFor="name"
+                                            name="name" 
+                                            className="form-control" 
+                                            placeholder="Name" 
+                                            value={this.state.name}
+                                            onChange={this.onNameChange.bind(this)}
+                                            ref={register({ required: true })}
+                                        />
+                                        <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.name && 'Name is required.'}
+                                        </div>
+                                    </div>
+    
+                                    <div className="form-group">
+                                        <input 
+                                            type="email"
+                                            htmlFor="exampleInputEmail1" 
+                                            name="email"
+                                            className="form-control" 
+                                            placeholder="Email" 
+                                            value={this.state.email}
+                                            onChange={this.onEmailChange.bind(this)}
+                                            ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+                                        />
+                                        <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.email && 'Email is required.'}
+                                        </div>
+                                    </div>
                         
-                            <div className="form-group">
-                                <textarea 
-                                    name="text" 
-                                    className="form-control" 
-                                    cols="30" 
-                                    rows="6" 
-                                    placeholder="Write message" 
-                                    value={contact.text}
-                                    onChange={handleChange}
-                                    ref={register({ required: true })}
-                                />
-                                <div className='invalid-feedback' style={{display: 'block'}}>
-                                    {errors.text && 'Text body is required.'}
-                                </div>
-                            </div>
+                                    <div className="form-group">
+                                        <input 
+                                            type="text" 
+                                            htmlFor="subject"
+                                            name="subject" 
+                                            className="form-control" 
+                                            placeholder="Subject" 
+                                            value={this.state.subject}
+                                            onChange={this.onSubjectChange.bind(this)}
+                                            ref={register({ required: true })}
+                                        />
+                                        <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.subject && 'Subject is required.'}
+                                        </div>
+                                    </div>
+    
+                                    <div className="form-group">
+                                        <input 
+                                            type="text" 
+                                            htmlFor="number"
+                                            name="number" 
+                                            className="form-control" 
+                                            placeholder="Phone" 
+                                            value={this.state.number}
+                                            onChange={this.onNumberChange.bind(this)}
+                                            ref={register({ required: true })}
+                                        />
+                                        <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.number && 'Number is required.'}
+                                        </div>
+                                    </div>
                                 
-                            <button type="submit" className="btn common-btn three">Send Message <span></span></button>
-                        </form>
-                    </div>
-
-                    <div className="col-md-5 col-lg-6">
-                        <div className="contact-content">
-                            <div className="top">
-                                <ul>
-                                    <li>
-                                        <span>Phone:</span>
-                                        <a href="tel:+00932123456">+009 321 23456</a>
-                                    </li>
-                                    <li>
-                                        <span>Email:</span>
-                                        <a href="mailto:hello@reton.com">hello@reton.com</a>
-                                    </li>
-                                    <li>
-                                        <span>Website:</span>
-                                        <a href="#" target="_blank">www.reton.com</a>
-                                    </li>
-                                    <li>
-                                        <span>Address:</span>
-                                        <a href="#" target="_blank">12/7, Mc Street, Canada</a>
-                                    </li>
-                                </ul>
+                                    <div className="form-group">
+                                        <textarea 
+                                            name="text" 
+                                            htmlFor="message"
+                                            className="form-control" 
+                                            cols="30" 
+                                            rows="6" 
+                                            placeholder="Write message" 
+                                            value={this.state.text}
+                                            onChange={this.onMessageChange.bind(this)}
+                                            ref={register({ required: true })}
+                                        />
+                                        <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.text && 'Text body is required.'}
+                                        </div>
+                                    </div>
+                                        
+                                    <button type="submit" className="btn common-btn three">Send Message <span></span></button>
+                                </form>
                             </div>
-
-                            <div className="bottom">
-                                <ul>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-facebook'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-twitter'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-linkedin'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-behance'></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i className='bx bxl-dribbble'></i>
-                                        </a>
-                                    </li>
-                                </ul>
+    
+                            <div className="col-md-5 col-lg-6">
+                                <div className="contact-content">
+                                    <div className="top">
+                                        <ul>
+                                            <li>
+                                                <span>Phone:</span>
+                                                <a href="tel:+19792195702">{resume.contact.phone}</a>
+                                            </li>
+                                            <li>
+                                                <span>Email:</span>
+                                                <a href="mailto:staci.shon@gmail.com">{resume.contact.email}</a>
+                                            </li>
+                                            <li>
+                                                <span>City:</span>
+                                                <a href="#" target="_blank">{resume.contact.location}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div className="bottom">
+                                        <ul>
+                                            <li>
+                                                <a href={resume.social.linkedinurl} target="_blank">
+                                                    <FontAwesomeIcon icon={faLinkedinIn} />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href={resume.social.githuburl} target="_blank">
+                                                    <FontAwesomeIcon icon={faGithub} />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href={resume.social.twitterurl} target="_blank">
+                                                    <FontAwesomeIcon icon={faTwitter} />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href={resume.social.facebookurl} target="_blank">
+                                                    <FontAwesomeIcon icon={faFacebookF} />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img src={logo1} alt="resume" width="30"/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    )
-}
+            )
+        }
+        onNameChange(event) {
+            this.setState({name: event.target.value})
+        }
+      
+        onEmailChange(event) {
+            this.setState({email: event.target.value})
+        }
+
+        onSubjectChange(event) {
+            this.setState({name: event.target.value})
+        }
+      
+        onNumberChange(event) {
+            this.setState({email: event.target.value})
+        }
+      
+        onMessageChange(event) {
+            this.setState({message: event.target.value})
+        }
+    }
+
 
 export default ContactForm

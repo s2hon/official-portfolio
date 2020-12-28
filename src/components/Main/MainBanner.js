@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const MainBanner = () => {
     return (
@@ -16,12 +16,12 @@ const MainBanner = () => {
                             <p>Hello I am a <span>Full Stack Web Application Developer</span> with background in Business management and Entrepreneurship. With over 5 years of experience in the hospitality industry, I’ve been effectively and creatively problem solving to develop user friendly applications for small businesses.</p>
 
                             <div className="banner-btn-area">
-                                <Link to="#Contact" className="common-btn three">
-                                    Contact With Me
-                                </Link>
-                                <Link to="#" className="common-btn banner-btn three">
-                                    Hire Me
-                                </Link>
+                                <AnchorLink href="#contact" className="common-btn three">
+                                    Connect With Me
+                                </AnchorLink>
+                                <a to="#" className="common-btn banner-btn three">
+                                    See Resume
+                                </a>
                             </div>
                         </div>
                     </div>
