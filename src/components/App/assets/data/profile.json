@@ -1,0 +1,178 @@
+{ 
+  "role": "I Am A Junior Website and Web Application Developer",
+  "specification": "Specialized In: JavaScript, CSS3, React, Redux & Project Management",
+  "fullname": "Staci Shon",
+  "contact": {
+    "phone": "+1 979.219.5702",
+    "email": "staci.shon@gmail.com",
+    "website": "https://s2hon.github.io",
+    "location": "Austin, Texas"
+  },
+  "summary": "Full Stack Web Application Developer with background in Business management and Entrepreneurship. With over 5 years of experience in the hospitality industry, I’ve been effectively and creatively problem solving to develop user friendly applications for small businesses.",
+  "education": [
+    {
+      "institution": "The University of Texas at Austin - Center for Professional Education",
+      "degree": "Full Stack Web Development",
+      "description": "A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handelbars.js & ReactJS.",
+      "start": "Sep 2020",
+      "end": "Dec 2020"
+    },
+    {
+      "institution": "The University of Texas at Austin - Red McCombs School of Business",
+      "degree": "BBA, Business Management with concentration in Entrepreneurship",
+      "start": "Aug 2013",
+      "end": "Dec 2018"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Freelance",
+      "company": "",
+      "description": [""],
+      "start": "12/2020",
+      "end": "Present"
+    },
+    {
+      "role": "Bartender",
+      "company": "The Venue",
+      "description": [
+        "Provide bar patrons with superior service and enjoyable, memorable experience with excelled up-selling customers from shelf to premium brands."
+      ],
+      "start": "08/2018",
+      "end": "Present"
+    },
+    {
+      "role": "Event & Catering Coordinator",
+      "company": "La Pera Catering",
+      "description": [
+        "Built and implemented efficient, operational and communication structure, for the group, which increased our total sales by 200%.",
+        "Coordinated and monitored event timelines and ensured completion within agreed upon deadlines."
+      ],
+      "start": "11/2018",
+      "end": "09/2019"
+    },
+    {
+      "role": "Assistant General Manager & Event Coordinator",
+      "company": "Ah Sing Den",
+      "description": [
+        "Created a cross-training program ensuring FOH staff members were able to perform confidently and effectively in all positions.",
+        "Worked with clients to guide them through the event details and served as their personal coordinator throughout the entire planning process and event."
+      ],
+      "start": "04/2018",
+      "end": "11/2018"
+    },
+    {
+      "role": "Operations Coordinator",
+      "company": "Barkeep",
+      "description": [
+        "Researched and registered company to various start up events not only finding investors and mentors but also growing attraction.",
+        "Prepared event materials (booth layout, presentation, scripts etc..) and content for the organization.",
+        "Tracked and reported costs, sales, and other various event statistics for each event."
+      ],
+      "start": "08/2017",
+      "end": "03/2019"
+    },
+    {
+      "role": "General Manager",
+      "company": "Sushi Junai",
+      "description": [
+        "Created and increased customer engagement on company social media accounts.",
+        "Created a cross-training program ensuring FOH staff members were able to perform confidently and effectively in all positions."
+      ],
+      "start": "10/2014",
+      "end": "11/2017"
+    }
+  ],
+  "social": 
+    {
+      "linkedinurl": "https://www.linkedin.com/in/staci-shon",
+      "githuburl": "https://github.com/s2hon",
+      "facebookurl": "https://www.facebook.com/staci.shon",
+      "instagramurl": "https://www.instagram.com/s2_hon",
+      "twitterurl": "https://twitter.com/30minutesbefore"
+    },
+  "majorprojects":
+    {
+      "name": "Interactive Menu Web App",
+      "company": "Sushi Junai",
+      "description": "As my first real world experience-I contacted my old job Sushi Junai-a popular all you can eat sushi joint in Austin TX-and offered them to create a web application. Under my lead, I-with 4 other classmates-developed a customized Sushi Junai app where customers can not only track their order history but also access favorites! The app is in 2nd iteration and more updates are still coming.",
+      "link": "https://sushi-junai.herokuapp.com/",
+      "github": "https://github.com/s2hon/sushi-junai",
+      "responsibilities": "",
+      "tools": " React.JS, Redux, Node.JS, MySQL, Yelp API, Reactstrap, Sequelize"
+    },
+  "skills": [
+    {
+      "title": "Front-end",
+      "type": "tag",
+      "subskills": [
+        {
+          "name": "HTML/CSS"
+        },
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "SQL"
+        },
+        {
+          "name": "jQuery"
+        },
+        {
+          "name": "React"
+        },
+        {
+          "name": "Redux"
+        }
+      ]
+    },
+    {
+      "title": "Back-end",
+      "type": "tag",
+      "subskills": [
+        {
+          "name": "Node.JS"
+        },
+        {
+          "name": "Express"
+        },
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "MongoDB"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "type": "tag",
+      "subskills": [
+        {
+          "name": "Git"
+        },
+        {
+          "name": "GitHub"
+        },
+        {
+          "name": "Google Analytics"
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {"type": "achievements",
+      "subskills": [
+        {
+          "name": "Git"
+        },
+        {
+          "name": "GitHub"
+        },
+        {
+          "name": "Google Analytics"
+        }
+      ]}
+
+  ]
+}
