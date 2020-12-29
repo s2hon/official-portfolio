@@ -19,7 +19,7 @@ const MainBanner = () => {
                                 <AnchorLink href="#contact" className="common-btn three">
                                     Connect With Me
                                 </AnchorLink>
-                                <a to="#" className="common-btn banner-btn three">
+                                <a to="https://s2hon.github.io" className="common-btn banner-btn three">
                                     See Resume
                                 </a>
                             </div>
