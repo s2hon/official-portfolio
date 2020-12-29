@@ -2,8 +2,7 @@ import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import project0 from '../../components/App/assets/images/projects/SushiJunai.gif'
-import project1 from '../../components/App/assets/images/projects/Earbud.gif'
+import PortfolioImg from './ProjectImage';
 
 const Portfolio = ({ data }) => {
     return (
@@ -19,11 +18,11 @@ const Portfolio = ({ data }) => {
                         return(
                             <>
                             <div className="col-lg-1"></div>
-                            <div className="col-lg-10">
+                            <div className="col-lg-10" key={i}>
                                 <h3 style={{color: "#BF0404"}}>{item.name}</h3>
                                 <div className="portfolio-item">
                                     <div className="top">
-                                        <img src={project0} alt="Sushi Junai" />
+                                        <PortfolioImg type={item.img} />
                                     </div>
                                     <div className="bottom">
                                         <div className="bottom-one">

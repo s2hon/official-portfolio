@@ -100,6 +100,7 @@
       "description": "As my first real world experience-I contacted my old job Sushi Junai-a popular all you can eat sushi joint in Austin TX-and offered them to create a web application. Under my lead, with 4 other classmates, we developed a customized Sushi Junai app with a order track with an option to save favorites! The app is in 3rd iteration and more updates are still coming.",
       "link": "https://sushi-junai.herokuapp.com/",
       "github": "https://github.com/s2hon/sushi-junai-official",
+      "img": "mainproject0",
       "responsibilities": "",
       "tools": "React.JS, Redux, Node.JS, MySQL, Yelp API, Reactstrap, Sequelize, Heroku"
     },
@@ -109,6 +110,7 @@
       "description": "A site that allows users to search, catalogue, and review music on an individual page, curating their tastes and watching trends emerge in real time.",
       "link": "https://earbudteam8.herokuapp.com/",
       "github": "https://github.com/s2hon/EARBUD",
+      "img": "mainproject1",
       "responsibilities": "",
       "tools": "Node.js, Express, Spotify API, jQuery, Sequelize, jawsDB, Foundation, Heroku"
     }

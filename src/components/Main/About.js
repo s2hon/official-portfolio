@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../../components/App/assets/images/about4.jpg'
+import aboutImg from '../../components/App/assets/images/profile.png'
 import resume from '../App/assets/data/profile'
 
 const About = () => {
