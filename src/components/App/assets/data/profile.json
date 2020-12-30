@@ -28,8 +28,8 @@
   ],
   "experience": [
     {
-      "role": "Freelance",
-      "company": "",
+      "role": "Full Stack Web Developer",
+      "company": "Freelance",
       "description": ["Responsible for design, programming, deployment, testing and maintenance of one or more application using JavaScript/HTML5/CSS3/JQuery/Node.js/React/SQL technologies."],
       "start": "12/2020",
       "end": "Present"
@@ -150,6 +150,6 @@
       }
     ], 
     "resume": {
-      "download": "https://drive.google.com/file/d/1G6gx6iOE6NK5ItgqzVJMw5rCwD-_JxyP/view?usp=sharing"
+      "download": "https://drive.google.com/file/d/1VbYt9BCjlNUvmbxatT027PUgCHLjPniQ/view?usp=sharing"
     }
   }
