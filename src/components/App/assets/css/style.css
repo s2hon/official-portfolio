@@ -760,36 +760,26 @@ button:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
   margin: 0;
-  padding-bottom: 15px;
 }
 
 .experience-area .experience-content .experience-inner ul li {
   list-style-type: none;
-  display: inline-block;
 }
 
 .experience-area .experience-content .experience-inner ul li:nth-child(1) {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
-  max-width: 15%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  margin-left: 12px;
 }
 
 .experience-area .experience-content .experience-inner ul li:nth-child(2) {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-  max-width: 30%;
-  margin-left: 12px;
-}
-
-.experience-area .experience-content .experience-inner ul li:nth-child(3) {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-  max-width: 50%;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+  max-width: 65%;
   margin-left: 12px;
 }
 
@@ -803,9 +793,12 @@ button:focus {
   margin-bottom: 0;
 }
 
-.experience-area .experience-content p {
-  margin-bottom: 5px;
+.experience-area .experience-content .experience-inner .second {
+  display: inline-block;
+  margin-right: 12px;
 }
+
+
 
 /*-- Portfolio --*/
 .portfolio-item {

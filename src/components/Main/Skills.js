@@ -83,10 +83,6 @@ const Partners = () => {
                         </div>
 
                         <div className="logo-item">
-                            <FontAwesomeIcon icon={faNpm} size="4x" color="#CC3534"/>
-                        </div>
-
-                        <div className="logo-item">
                             <img src={logo2} alt="mySql" width="70"/>
                         </div>
 

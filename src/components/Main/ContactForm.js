@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import withReactContent from 'sweetalert2-react-content'
 import { useForm } from 'react-hook-form'
-import resume from '../App/assets/data/profile'
+import data from '../App/assets/data/profile'
 import * as emailjs from "emailjs-com";
 import Swal from 'sweetalert2'
 const MySwal = withReactContent(Swal)
@@ -144,15 +144,15 @@ const ContactForm = () => {
                                     <ul>
                                         <li>
                                             <span>Phone:</span>
-                                            <a href="tel:+19792195702">{resume.contact.phone}</a>
+                                            <a href="tel:+19792195702">{data.contact.phone}</a>
                                         </li>
                                         <li>
                                             <span>Email:</span>
-                                            <a href="mailto:staci.shon@gmail.com">{resume.contact.email}</a>
+                                            <a href="mailto:staci.shon@gmail.com">{data.contact.email}</a>
                                         </li>
                                         <li>
                                             <span>City:</span>
-                                            <a href="#" target="_blank">{resume.contact.location}</a>
+                                            <a href="#" target="_blank">{data.contact.location}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -160,27 +160,27 @@ const ContactForm = () => {
                                 <div className="bottom">
                                     <ul>
                                         <li>
-                                            <a href={resume.social.linkedinurl} target="_blank">
+                                            <a href={data.social.linkedinurl} target="_blank">
                                                 <FontAwesomeIcon icon={faLinkedinIn} />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href={resume.social.githuburl} target="_blank">
+                                            <a href={data.social.githuburl} target="_blank">
                                                 <FontAwesomeIcon icon={faGithub} />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href={resume.social.twitterurl} target="_blank">
+                                            <a href={data.social.twitterurl} target="_blank">
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href={resume.social.facebookurl} target="_blank">
+                                            <a href={data.social.facebookurl} target="_blank">
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank">
+                                            <a href={data.resume.download} target="_blank">
                                                 <img src={logo1} alt="resume" width="30"/>
                                             </a>
                                         </li>

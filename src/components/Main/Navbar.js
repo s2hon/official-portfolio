@@ -1,9 +1,7 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import { useRecoilState } from 'recoil'
 import {sModalState} from '../../utils/recoil-atoms'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import logo1 from '../../components/App/assets/images/logo/icons8-download-resume.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faEnvelope,
@@ -14,7 +12,7 @@ import {
     faLinkedinIn,
     faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import resume from '../App/assets/data/profile'
+import data from '../App/assets/data/profile'
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = React.useState(true)
@@ -117,14 +115,14 @@ const Navbar = () => {
                         </ul>
 
                         <div className="aside-footer">
-                            <Link to="#" className="common-btn three">
+                            <a href={data.resume.download} target="_blank" className="common-btn three">
                                 Download Resume <i className='bx bxs-download'></i>
-                            </Link>
+                            </a>
                             <ul className="social">
-                                <li><a href={resume.social.linkedinurl} target="_blank"><FontAwesomeIcon icon={faLinkedinIn} size="1x" /></a></li>
-                                <li><a href={resume.social.githuburl} target="_blank"><FontAwesomeIcon icon={faGithub} size="1x" /></a></li>
-                                <li><a href={resume.social.facebookurl} target="_blank"><FontAwesomeIcon icon={faFacebookF} size="1x" /></a></li>
-                                <li><a href={resume.social.twitterurl} target="_blank"><FontAwesomeIcon icon={faTwitter} size="1x" /></a></li>
+                                <li><a href={data.social.linkedinurl} target="_blank"><FontAwesomeIcon icon={faLinkedinIn} size="1x" /></a></li>
+                                <li><a href={data.social.githuburl} target="_blank"><FontAwesomeIcon icon={faGithub} size="1x" /></a></li>
+                                <li><a href={data.social.facebookurl} target="_blank"><FontAwesomeIcon icon={faFacebookF} size="1x" /></a></li>
+                                <li><a href={data.social.twitterurl} target="_blank"><FontAwesomeIcon icon={faTwitter} size="1x" /></a></li>
                                 <li><a href="mailto:staci.shon@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope} size="1x" /></a></li>
                                 {/* <li><a href="#" target="_blank"><img src={logo1} alt="resume" width="30"/></a></li> */}
                             </ul>

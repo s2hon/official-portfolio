@@ -1,4 +1,12 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+    faBuilding,
+    faCalendarAlt,
+    faMapMarkerAlt
+} from "@fortawesome/free-solid-svg-icons"
+
+
 
 const Experience = ({ data }) => {
     return (
@@ -15,18 +23,22 @@ const Experience = ({ data }) => {
                             <div className="experience-inner" key={i}>
                                 <ul className="align-items-center">
                                     <li>
-                                        <span>{experience.start} - {experience.end}</span>
+                                    <span><FontAwesomeIcon icon={faCalendarAlt} size="1x" /> {experience.start} - {experience.end}</span>
                                     </li>
                                     <li>
-                                        <span style={{color: "#dc3545"}}>{experience.role}</span><br/>
-                                        <p>{experience.company}</p>
+                                        <h5 style={{color: "#dc3545"}}>{experience.role}</h5>
                                     </li>
+                                </ul>
+                                <ul className="align-items-center">
+                                    <li></li>
                                     <li>
-                                        {experience.description &&
+                                        <p className="second"><FontAwesomeIcon icon={faBuilding} size="1x"/> {experience.company}</p> 
+                                        <p className="second"><FontAwesomeIcon icon={faMapMarkerAlt} size="1x"/> Austin, TX</p>
+                                    </li>
+                                    {experience.description &&
                                         experience.description.map(item => 
-                                            (<p>➡ {item}</p>))
-                                        }
-                                    </li>
+                                            (<p style={{marginBottom: "0px"}}>* {item}</p>))
+                                    }
                                 </ul>
                             </div>
                     )}

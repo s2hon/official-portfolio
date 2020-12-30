@@ -30,7 +30,7 @@
     {
       "role": "Freelance",
       "company": "",
-      "description": [""],
+      "description": ["Responsible for design, programming, deployment, testing and maintenance of one or more application using JavaScript/HTML5/CSS3/JQuery/Node.js/React/SQL technologies."],
       "start": "12/2020",
       "end": "Present"
     },
@@ -101,7 +101,7 @@
       "link": "https://sushi-junai.herokuapp.com/",
       "github": "https://github.com/s2hon/sushi-junai-official",
       "img": "mainproject0",
-      "responsibilities": "",
+      "contribution": "Initiate project, manage project development and completion, front-end, back-end",
       "tools": "React.JS, Redux, Node.JS, MySQL, Yelp API, Reactstrap, Sequelize, Heroku"
     },
     {
@@ -111,7 +111,7 @@
       "link": "https://earbudteam8.herokuapp.com/",
       "github": "https://github.com/s2hon/EARBUD",
       "img": "mainproject1",
-      "responsibilities": "",
+      "contribution": "Initiate project, manage project development and completion, re-structure boilerplate code, front-end(AJAX), back-end(CRUD)",
       "tools": "Node.js, Express, Spotify API, jQuery, Sequelize, jawsDB, Foundation, Heroku"
     }
   ],
@@ -149,78 +149,7 @@
         "img": "smallproject2"
       }
     ], 
-  "skills": [
-    {
-      "title": "Front-end",
-      "type": "tag",
-      "subskills": [
-        {
-          "name": "HTML/CSS"
-        },
-        {
-          "name": "JavaScript"
-        },
-        {
-          "name": "SQL"
-        },
-        {
-          "name": "jQuery"
-        },
-        {
-          "name": "React"
-        },
-        {
-          "name": "Redux"
-        }
-      ]
-    },
-    {
-      "title": "Back-end",
-      "type": "tag",
-      "subskills": [
-        {
-          "name": "Node.JS"
-        },
-        {
-          "name": "Express"
-        },
-        {
-          "name": "MySQL"
-        },
-        {
-          "name": "MongoDB"
-        }
-      ]
-    },
-    {
-      "title": "Other",
-      "type": "tag",
-      "subskills": [
-        {
-          "name": "Git"
-        },
-        {
-          "name": "GitHub"
-        },
-        {
-          "name": "Google Analytics"
-        }
-      ]
+    "resume": {
+      "download": "https://drive.google.com/file/d/1G6gx6iOE6NK5ItgqzVJMw5rCwD-_JxyP/view?usp=sharing"
     }
-  ],
-  "achievements": [
-    {"type": "achievements",
-      "subskills": [
-        {
-          "name": "Git"
-        },
-        {
-          "name": "GitHub"
-        },
-        {
-          "name": "Google Analytics"
-        }
-      ]}
-
-  ]
-}
+  }

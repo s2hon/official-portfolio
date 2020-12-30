@@ -25,6 +25,7 @@ const Portfolio = ({ data }) => {
                                         <PortfolioImg type={item.img} />
                                     </div>
                                     <div className="bottom">
+                                        
                                         <div className="bottom-one">
                                             <h3>
                                                 <a href={item.link} target="_blank">
@@ -34,10 +35,12 @@ const Portfolio = ({ data }) => {
                                             <a href={item.github} target="_blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
                                         </div>
                                         <div className="bottom-two">
-                                            <p>{item.tools}</p>
+                                            <p style={{color: "#000000a6"}}>{item.tools}</p>
+                                            <p>keywords: {item.contribution}</p>
                                         </div>
                                     </div>
                                     <span>{item.description}</span>
+                                    
                                 </div>
                             </div>
                             <div className="col-lg-1"></div>

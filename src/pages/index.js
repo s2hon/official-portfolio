@@ -7,7 +7,7 @@ import About from "../components/Main/About"
 import Portfolio from "../components/Main/Portfolio"
 import Education from "../components/Main/Education"
 import Experience from "../components/Main/Experience"
-import Partners from "../components/Main/Partners"
+import Skills from "../components/Main/Skills"
 import Projects from "../components/Main/Projects"
 import ContactForm from "../components/Main/ContactForm"
 import Footer from "../components/Main/Footer"
@@ -23,7 +23,7 @@ const IndexPage = () => (
                     <MainBanner />
                     <About data={data}/>
                     <Portfolio data={data}/>
-                    <Partners />
+                    <Skills />
                     <Education/>
                     <Experience data={data}/>
                     <Projects data={data}/>

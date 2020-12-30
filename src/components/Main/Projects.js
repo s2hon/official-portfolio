@@ -26,7 +26,7 @@ const Projects = ({ data }) => {
                                                 Explore <i className="flaticon-right-arrow"></i>
                                                 </a>
                                             </span>
-                                            <h3>{item.name}</h3>
+                                            <h3 style={{color: "#000000a6"}}>{item.name}</h3>
                                         </div>
                                     </div>
                                 </div>
