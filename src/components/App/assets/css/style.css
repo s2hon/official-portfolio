@@ -810,13 +810,13 @@ button:focus {
 }
 
 .portfolio-item:before {
-  position: absolute;
+  position: absolute !important;
   content: '';
   width: 100%;
   height: 0%;
   left: 0;
   bottom: 0;
-  background-color: #BF545D;
+  background-color: #BF545D !important;
   opacity: 95%;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
