@@ -1,5 +1,22 @@
 /*
+@File: Reton Template Style
 
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Home Demo One CSS
+** - Home Demo Two CSS
+** - Home Demo Three CSS
+** - Home Demo Four CSS
+** - Home Demo Five CSS
+** - Home Demo Six CSS
 ** - Work Details CSS
 ** - Case Study Details CSS
 ** - Blog Details CSS
@@ -2244,31 +2261,130 @@ button:focus {
   color: #BF0404;
 }
 
-/*-- Logo --*/
-.logo-area {
-  border-top: 1px solid #b7b7b74d;
-  border-bottom: 1px solid #b7b7b74d;
+/*----- End Home Demo Three CSS -----*/
+/*----- Home Demo Four CSS -----*/
+/*-- Navbar --*/
+.navbar-light.four {
+  background-color: #fff;
 }
 
-.logo-area .container .right{
-  text-align: right;
-  color: #BF545D;
+.navbar-light.four .navbar-nav .active > .nav-link, .navbar-light.four .navbar-nav .nav-link.active, .navbar-light.four .navbar-nav .nav-link.show, .navbar-light.four .navbar-nav .show > .nav-link {
+  color: #5C2CFF;
 }
 
-.logo-area .logo-item {
-  text-align: center;
+.navbar-light.four .navbar-nav .nav-link:focus, .navbar-light.four .navbar-nav .nav-link:hover {
+  color: #5C2CFF;
 }
 
-.logo-area .logo-item .icon {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: auto;
+.navbar-light.four.is-sticky .navbar-nav .nav-link {
+  color: #171717;
 }
 
-.logo-area .logo-item img {
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 65px;
+.navbar-light.four.is-sticky .navbar-nav .active > .nav-link, .navbar-light.four.is-sticky .navbar-nav .nav-link.active, .navbar-light.four.is-sticky .navbar-nav .nav-link.show, .navbar-light.four.is-sticky .navbar-nav .show > .nav-link {
+  color: #5C2CFF;
+}
+
+.navbar-light.four.is-sticky .navbar-nav .nav-link:focus, .navbar-light.four.is-sticky .navbar-nav .nav-link:hover {
+  color: #5C2CFF;
+}
+
+.navbar-light.four.is-sticky .common-btn:before {
+  border-top: 2px solid #5C2CFF;
+  border-left: 2px solid #5C2CFF;
+  border-bottom: 2px solid #5C2CFF;
+}
+
+.navbar-light.four.is-sticky .common-btn:after {
+  border-top: 2px solid #5C2CFF;
+  border-right: 2px solid #5C2CFF;
+  border-bottom: 2px solid #5C2CFF;
+}
+
+/*-- Banner --*/
+.banner-area.four {
+  background-image: url("../images/banner/banner-bg2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.banner-area.four .banner-img img {
+  position: absolute;
+  bottom: 0;
+  right: 75px;
+  max-width: 690px;
+}
+
+.banner-area.four:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5C2CFF;
+  opacity: .80;
+}
+
+.banner-area.four .banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-area.four .banner-content .sub-head {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.banner-area.four .banner-content h1 {
+  max-width: 100%;
+  color: #fff;
+  font-size: 100px;
+  margin-bottom: 5px;
+}
+
+.banner-area.four .banner-content p {
+  color: #fff;
+  max-width: 575px;
+}
+
+.banner-area.four .banner-content p span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.banner-area.four .banner-content .common-btn {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.banner-area.four .banner-content .common-btn:before {
+  background-color: #fff;
+}
+
+.banner-area.four .banner-content .common-btn:after {
+  background-color: #fff;
+}
+
+.banner-area.four .banner-content .common-btn:hover {
+  color: #5C2CFF;
+}
+
+.banner-area.four .banner-content .banner-btn-area .banner-btn {
+  color: #5C2CFF;
+}
+
+.banner-area.four .banner-content .banner-btn-area .banner-btn:hover {
+  color: #fff;
+}
+
+.banner-area.four .banner-content ul li a {
+  color: #fff;
 }
 
 /*-- Work --*/
@@ -2548,6 +2664,158 @@ button:focus {
   margin-top: 30px;
 }
 
+/*----- Home Demo Five CSS -----*/
+.body-bg-five {
+  background-color: #121212;
+}
+
+/*-- Navbar --*/
+.navbar-light.five {
+  background-color: #111111;
+}
+
+.navbar-light.five .navbar-nav .active > .nav-link, .navbar-light.five .navbar-nav .nav-link.active, .navbar-light.five .navbar-nav .nav-link.show, .navbar-light.five .navbar-nav .show > .nav-link {
+  color: #ED2C66;
+}
+
+.navbar-light.five .navbar-nav .nav-link:focus, .navbar-light.five .navbar-nav .nav-link:hover {
+  color: #ED2C66;
+}
+
+.navbar-light.five .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light.five.is-sticky {
+  -webkit-box-shadow: 0px 0px 20px 0px #dddddd26;
+          box-shadow: 0px 0px 20px 0px #dddddd26;
+}
+
+/*-- Banner --*/
+.banner-area.five {
+  overflow: hidden;
+}
+
+.banner-area.five .banner-content {
+  position: relative;
+  z-index: 1;
+  background-color: #0B0D0E;
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 50px 100px;
+  margin-top: 150px;
+}
+
+.banner-area.five .banner-content .sub-head {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 4px;
+  display: block;
+  margin-top: -10px;
+}
+
+.banner-area.five .banner-content h1 {
+  max-width: 100%;
+  color: #fff;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.banner-area.five .banner-content p {
+  color: #fff;
+  max-width: 240px;
+}
+
+.banner-area.five .banner-content p span {
+  color: #ED2C66;
+  font-weight: 700;
+}
+
+.banner-area.five .banner-content .banner-btn-area {
+  margin-bottom: 0;
+}
+
+.banner-area.five .banner-content .banner-btn-area .banner-btn {
+  color: #fff;
+}
+
+.banner-area.five .banner-content .banner-btn-area .banner-btn:hover {
+  color: #ED2C66;
+}
+
+.banner-area.five .banner-content .banner-img {
+  position: absolute;
+  right: -45px;
+  bottom: 0;
+  max-width: 625px;
+}
+
+.banner-area.five .banner-content .banner-social-text {
+  position: absolute;
+  top: 45px;
+  left: -80px;
+}
+
+.banner-area.five .banner-content .banner-social-text ul {
+  padding: 0;
+  margin: 0;
+}
+
+.banner-area.five .banner-content .banner-social-text ul li {
+  list-style-type: none;
+  display: block;
+  margin-right: 0;
+  margin-bottom: 45px;
+}
+
+.banner-area.five .banner-content .banner-social-text ul li:last-child {
+  margin-bottom: 0;
+}
+
+.banner-area.five .banner-content .banner-social-text ul li a {
+  display: block;
+  font-weight: 600;
+  color: #fff;
+}
+
+.banner-area.five .banner-content .banner-social-text ul li a:hover {
+  color: #ED2C66;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.banner-area.five .banner-content .banner-email {
+  position: absolute;
+  top: 235px;
+  right: -170px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.banner-area.five .banner-content .banner-email a {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  padding-left: 45px;
+}
+
+.banner-area.five .banner-content .banner-email a:before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  top: 15px;
+  left: 0;
+}
+
+.banner-area.five .banner-content .banner-email a:hover {
+  color: #ED2C66;
+}
+
 .lines {
   position: absolute;
   top: 0;
@@ -2625,6 +2893,115 @@ button:focus {
   to {
     top: 110%;
   }
+}
+
+/*-- Case Study --*/
+.case-study-area.two .case-study-img {
+  margin-bottom: 30px;
+}
+
+.case-study-area.two .case-study-content {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 0 0;
+  margin-bottom: 30px;
+}
+
+.case-study-area.two .case-study-content h3 a {
+  color: #fff;
+}
+
+.case-study-area.two .case-study-content h3 a:hover {
+  color: #ED2C66;
+}
+
+.case-study-area.two .case-study-content p {
+  color: #B7B7B7;
+}
+
+.case-study-area.two .case-study-content .case-study-btn {
+  color: #ED2C66;
+}
+
+.case-study-area.two .case-study-content .case-study-btn:hover {
+  color: #fff;
+}
+
+.case-study-area.two .common-btn.five {
+  margin-top: 0;
+}
+
+/*-- What --*/
+.what-area.two .what-item {
+  text-align: left;
+  background-color: #0B0D0E;
+  padding: 30px 30px 28px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.what-area.two .what-item:hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+  -webkit-box-shadow: 0px 0px 20px 0px #0B0D0E;
+          box-shadow: 0px 0px 20px 0px #0B0D0E;
+}
+
+.what-area.two .what-item .icon {
+  color: #fff;
+}
+
+.what-area.two .what-item h3 a {
+  color: #fff;
+}
+
+.what-area.two .what-item h3 a:hover {
+  color: #ED2C66;
+}
+
+.what-area.two .what-item p {
+  color: #B7B7B7;
+}
+
+.what-area.two .what-item .what-btn {
+  color: #fff;
+}
+
+.what-area.two .what-item .what-btn:hover {
+  color: #ED2C66;
+}
+
+/*-- About --*/
+.about-area.five .about-img-three {
+  margin-bottom: 30px;
+}
+
+.about-area.five .section-title.five {
+  text-align: left;
+}
+
+.about-area.five .section-title.five p {
+  color: #B7B7B7;
+}
+
+.about-area.five .about-content {
+  margin-bottom: 30px;
+}
+
+.about-area.five .about-content ul li {
+  color: #B7B7B7;
+}
+
+.about-area.five .about-content ul li span {
+  color: #fff;
+}
+
+.about-area.five .about-content ul li a {
+  color: #B7B7B7;
+}
+
+.about-area.five .about-content ul li a:hover {
+  color: #ED2C66;
 }
 
 /*-- Counter --*/
@@ -2718,6 +3095,63 @@ button:focus {
   margin-bottom: 0;
 }
 
+/*-- Logo --*/
+.logo-area {
+  border-top: 1px solid #b7b7b74d;
+  border-bottom: 1px solid #b7b7b74d;
+}
+
+.logo-area .container .right{
+  text-align: right;
+  color: #BF545D;
+}
+
+.logo-area .logo-item {
+  text-align: center;
+}
+
+.logo-area .logo-item .icon {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: auto;
+}
+
+.logo-area .logo-item img {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 65px;
+}
+
+.navbar-light.six {
+  background-color: #111111;
+}
+
+.navbar-light.six .navbar-nav .active > .nav-link, .navbar-light.six .navbar-nav .nav-link.active, .navbar-light.six .navbar-nav .nav-link.show, .navbar-light.six .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light.six .navbar-nav .nav-link:focus, .navbar-light.six .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-light.six .navbar-nav .nav-link {
+  color: #B7B7B7;
+}
+
+.navbar-light.six.is-sticky {
+  -webkit-box-shadow: 0px 0px 20px 0px #dddddd26;
+          box-shadow: 0px 0px 20px 0px #dddddd26;
+}
+
+/*-- Counter --*/
+.counter-area.two .counter-item h3 {
+  color: #fff;
+}
+
+.counter-area.two .counter-item p {
+  color: #B7B7B7;
+}
+
 /*-- Creation --*/
 .creation-item {
   margin-bottom: 30px;
@@ -2769,7 +3203,7 @@ button:focus {
   color: #B7B7B7;
 }
 
-/*----- Work Details CSS -----*/
+
 .navbar-light.seven {
   -webkit-box-shadow: 0px 0px 20px 0px #dddddd61;
           box-shadow: 0px 0px 20px 0px #dddddd61;
