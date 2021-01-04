@@ -2149,7 +2149,7 @@ button:focus {
   top: 0;
   left: 0;
   background-color: rgba(191, 84, 93) !important;
-  filter: alpha(opacity=95);
+  opacity: 1;
   z-index: 1;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
