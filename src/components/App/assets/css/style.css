@@ -817,7 +817,7 @@ button:focus {
   left: 0;
   bottom: 0;
   background-color: rgba(191, 84, 93) !important;
-  opacity: 1 !important;
+  filter: alpha(opacity=95);
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -2149,7 +2149,7 @@ button:focus {
   top: 0;
   left: 0;
   background-color: rgba(191, 84, 93) !important;
-  opacity: 1 !important;
+  filter: alpha(opacity=95);
   z-index: 1;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
