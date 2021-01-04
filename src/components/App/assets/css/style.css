@@ -817,7 +817,7 @@ button:focus {
   left: 0;
   bottom: 0;
   background-color: rgba(191, 84, 93) !important;
-  filter: alpha(opacity=95);
+  opacity: 0.95;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -833,7 +833,6 @@ button:focus {
 
 .portfolio-item:hover .bottom {
   bottom: 0;
-  opacity: 1;
   visibility: visible;
 }
 
@@ -2133,7 +2132,7 @@ button:focus {
 }
 
 .projects-area .projects-item:hover:before {
-  opacity: 95%;
+  opacity: 0.95;
 }
 
 .projects-area .projects-item:hover .inner {
