@@ -18,17 +18,17 @@ const PortfolioImg = ({ type }) => {
         case 'bigproject2':
             return <img src={bigproject2}  alt="fitness-tracker" />;
         case 'bigproject3':
-            return <img src={bigproject3}  alt="fitness-tracker" />;
+            return <img src={bigproject3}  alt="note-taker" />;
 
         case 'smallproject1':
-            return <img src={smallproject1}  alt="employee-directory" />;
+            return <img src={smallproject1}  alt="budget-tracker" />;
         case 'smallproject2':
-            return <img src={smallproject2}  alt="fitness-tracker" />;
+            return <img src={smallproject2}  alt="restaurant-reservation" />;
 
         case 'mainproject0':
-            return <img src={mainproject0}  alt="employee-directory" />;
+            return <img src={mainproject0}  alt="sushi-junai-web-app" />;
         case 'mainproject1':
-            return <img src={mainproject1}  alt="fitness-tracker" />;
+            return <img src={mainproject1}  alt="earbud" />;
         default:
         return null;
     }

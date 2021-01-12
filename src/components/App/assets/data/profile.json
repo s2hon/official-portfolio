@@ -98,11 +98,11 @@
       "name": "Interactive Menu Web App",
       "company": "Sushi Junai",
       "description": "As my first real world experience-I contacted my old job Sushi Junai-a popular all you can eat sushi joint in Austin TX-and offered them to create a web application. Under my lead, with 4 other classmates, we developed a customized Sushi Junai app with a order track with an option to save favorites! The app is in 3rd iteration and more updates are still coming.",
-      "link": "https://sushi-junai.herokuapp.com/",
-      "github": "https://github.com/s2hon/sushi-junai-official",
+      "link": "https://www.sushi-junai.app/dinein",
+      "github": "https://github.com/sushi-junai-atx/sushi-junai-atx-official",
       "img": "mainproject0",
       "contribution": "Initiate project, manage project development and completion, front-end, back-end",
-      "tools": "React.JS, Redux, Node.JS, MySQL, Yelp API, Reactstrap, Sequelize, Heroku"
+      "tools": "React.JS, Redux, Yelp API, Reactstrap, Netlify"
     },
     {
       "name": "Interactive Music Review Platform",

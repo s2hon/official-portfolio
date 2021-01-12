@@ -13,8 +13,7 @@ const MainBanner = () => {
                     <div className="container">
                         <div className="banner-content">
                             <h1><span>Staci</span> Shon</h1>
-                            <p>Hello I am a <span>Full Stack Web Application Developer</span> with background in Business management and Entrepreneurship. With over 5 years of experience in the hospitality industry, I’ve been effectively and creatively problem solving to develop user friendly applications for small businesses.</p>
-
+                            <p>Hello, I am a <span>Full Stack Web Application Developer</span> with background in Business Management and Entrepreneurship. With over 5 years of experience in the hospitality industry, I’ve been effectively and creatively problem-solving to develop user-friendly applications for small businesses.</p>
                             <div className="banner-btn-area">
                                 <AnchorLink href="#contact" className="common-btn three">
                                     Connect With Me
