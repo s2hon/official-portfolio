@@ -18,7 +18,7 @@ const MainBanner = () => {
                                 <AnchorLink href="#contact" className="common-btn three">
                                     Connect With Me
                                 </AnchorLink>
-                                <a href="https://drive.google.com/file/d/1VbYt9BCjlNUvmbxatT027PUgCHLjPniQ/view?usp=sharing" target="_blank" className="common-btn banner-btn three">
+                                <a href="https://s2hon.github.io" target="_blank" className="common-btn banner-btn three">
                                     See Resume
                                 </a>
                             </div>
