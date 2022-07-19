@@ -1,1 +1,1 @@
-# gatsby-portfolio
+# gatsby-resume
